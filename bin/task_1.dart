@@ -145,14 +145,29 @@ String rideRequest(bool driverAvailable, double userBalance, double tripCost) {
 }
 
 void main(List<String> arguments) {
-  print(login('student', 'iti123', true));
-  print(calcDiscount(100.0, true, false));
-  print(checkResult(50, 80));
-  print(loanApproval(10000, 30, false));
-  print(deliveryCost(300.0, 10.0));
-  print(checkBonus(4, 5));
-  print(doorAccess(true, true));
-  print(electricityUsage(380.0));
-  print(nextLevel(13, 75));
-  print(rideRequest(true, 50.0, 30.0));
+  /// Task (1)
+  // print(login('student', 'iti123', true));
+  // print(calcDiscount(100.0, true, false));
+  // print(checkResult(50, 80));
+  // print(loanApproval(10000, 30, false));
+  // print(deliveryCost(300.0, 10.0));
+  // print(checkBonus(4, 5));
+  // print(doorAccess(true, true));
+  // print(electricityUsage(380.0));
+  // print(nextLevel(13, 75));
+  // print(rideRequest(true, 50.0, 30.0));
+
+
+/// Task 2
+  printNumbers(5);
+  print("Sum: ${sumList([1, 2, 3, 4])}");
+  print("Max: ${findMax([3, 9, 2, 7])}");
+  print("Reversed: ${reverseString("dart")}");
+  printNames(["Ali", "Sara", "Omar"]);
+  print("Even Count: ${countEven([1, 2, 4, 7, 8])}");
+  print("Uppercase: ${toUpperCase(["hello", "world"])}");
+  printItems([10, 20, 30]);
+  print("Doubled: ${doubleNumbers([1, 2, 3])}");
+  print("Total Price: ${calculateTotal([10.5, 20.0, 5.5])}");
+
 }
