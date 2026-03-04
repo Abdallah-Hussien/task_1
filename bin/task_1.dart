@@ -1,4 +1,6 @@
 import 'package:task_1/task_1.dart' as task_1;
+import 'package:task_1/task_2';
+import 'task_2' as task_2;
 
 /*
 (fun - 1)
@@ -157,17 +159,16 @@ void main(List<String> arguments) {
   // print(nextLevel(13, 75));
   // print(rideRequest(true, 50.0, 30.0));
 
-
-/// Task 2
-  printNumbers(5);
-  print("Sum: ${sumList([1, 2, 3, 4])}");
-  print("Max: ${findMax([3, 9, 2, 7])}");
-  print("Reversed: ${reverseString("dart")}");
-  printNames(["Ali", "Sara", "Omar"]);
-  print("Even Count: ${countEven([1, 2, 4, 7, 8])}");
-  print("Uppercase: ${toUpperCase(["hello", "world"])}");
-  printItems([10, 20, 30]);
-  print("Doubled: ${doubleNumbers([1, 2, 3])}");
-  print("Total Price: ${calculateTotal([10.5, 20.0, 5.5])}");
-
+  /// Task 2
+  var task2 = TaskTwo();
+  task2.printNumbers(5);
+  print("Sum: ${task2.sumList([1, 2, 3, 4])}");
+  print("Max: ${task2.findMax([3, 9, 2, 7])}");
+  print("Reversed: ${task2.reverseString("dart")}");
+  task2.printNames(["Ali", "Sara", "Omar"]);
+  print("Even Count: ${task2.countEven([1, 2, 4, 7, 8])}");
+  print("Uppercase: ${task2.toUpperCase(["hello", "world"])}");
+  task2.printItems([10, 20, 30]);
+  print("Doubled: ${task2.doubleNumbers([1, 2, 3])}");
+  print("Total Price: ${task2.calculateTotal([10.5, 20.0, 5.5])}");
 }

@@ -1,4 +1,4 @@
-class Task2{
+class TaskTwo{
     
 // 1) Using for
 void printNumbers(int n) {
